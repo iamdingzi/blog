@@ -1,11 +1,11 @@
 tag1:
-  name: tag1
+  name: java基础
 
 tag2:
-  name: tag2
+  name: spring
 
 tag3:
-  name: tag3
+  name: 数据库
 
 tag4:
-  name: tag4
+  name: devops
