@@ -43,24 +43,24 @@ and mydate= #{mydate}
 
 ````
 public class OrderProvider {
-private final String TBL_ORDER = "tbl_order";
+    private final String TBL_ORDER = "tbl_order";
+    public String queryOrderByParam(OrderPara param) {
+        SQL sql = new SQL().SELECT("*").FROM(TBL_ORDER);
+        String room = param.getRoom();
+        if (StringUtils.hasText(room)) {
+          sql.WHERE("room LIKE #{room}");
+        }
+        Date myDate = param.getMyDate();
+        if (myDate != null) {
+            sql.WHERE("mydate LIKE #{mydate}");
+        }
+        return sql.toString();
+    }
+}    
 
-public String queryOrderByParam(OrderPara param) {
-SQL sql = new SQL().SELECT("*").FROM(TBL_ORDER);
-String room = param.getRoom();
-if (StringUtils.hasText(room)) {
-sql.WHERE("room LIKE #{room}");
-}
-Date myDate = param.getMyDate();
-if (myDate != null) {
-sql.WHERE("mydate LIKE #{mydate}");
-}
-return sql.toString();
-}
-}
 public interface OrderDAO {
-@SelectProvider(type = OrderProvider.class, method = "queryOrderByParam")
-List<Order> queryOrderByParam(OrderParam param);
+    @SelectProvider(type = OrderProvider.class, method = "queryOrderByParam")
+    List<Order> queryOrderByParam(OrderParam param);
 }
 ````
 
