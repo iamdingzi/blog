@@ -1,6 +1,6 @@
 permalink: /:year:month:day/:title
 url:
-baseurl: /
+baseurl: /index
 
 # variables
 name: Your Site Name
