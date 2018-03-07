@@ -1,5 +1,6 @@
 permalink: /:year:month:day/:title
-baseurl: https://iamdingzi.github.io/
+url:
+baseurl:
 repo: helloworld
 
 # variables
