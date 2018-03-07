@@ -40,6 +40,7 @@ and mydate= #{mydate}
 "</script>"})
 ````
 2. 用Provider去实现SQL拼接，例如：
+
 ````
 public class OrderProvider {
 private final String TBL_ORDER = "tbl_order";
@@ -62,6 +63,7 @@ public interface OrderDAO {
 List<Order> queryOrderByParam(OrderParam param);
 }
 ````
+
 
 注意：方式1有个隐患就是当传入参数为空的时候，可能会造成全表查询。
 复杂SQL用方式2会比较灵活（当然，并不建议写复杂SQL），而且可以抽象成通用的基类，使每个DAO都可以通过这个基类实现基本的通用查询，原理类似Spring JDBC Template。
