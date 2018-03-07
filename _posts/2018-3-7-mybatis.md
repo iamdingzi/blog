@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "插入数据后获取自增长的主键值"
-tags: mybatis
+tags: java
 ---
 
 ## mybatis使用注解方式插入数据后获取自增长的主键值
