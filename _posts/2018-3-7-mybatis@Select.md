@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "mybatis使用注解方式插入数据后获取自增长的主键值"
-tags:  java
+title: "@Select注解中当参数为空则不添加该参数的判断"
+tags:  mybatis
 ---
 
 ## mybatis @Select注解中当参数为空则不添加该参数的判断
