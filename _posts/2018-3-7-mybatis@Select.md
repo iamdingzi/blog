@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "@Select注解中当参数为空则不添加该参数的判断"
-tags:  mybatis
+tags: mybatis
 ---
 
 ## mybatis @Select注解中当参数为空则不添加该参数的判断
