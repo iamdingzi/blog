@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Markdown Test Page"
-tags: java spring
+tags: java
 ---
 
 ## Source: [Markdown Test Page](https://github.com/fullpipe/markdown-test-page)
