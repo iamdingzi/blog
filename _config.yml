@@ -1,6 +1,7 @@
 permalink: /:year:month:day/:title
-url: https://iamdingzi.github.io/helloworld/
+url: https://iamdingzi.github.io/helloworld
 baseurl:
+root: /helloworld/
 
 # variables
 name: Your Site Name
