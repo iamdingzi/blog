@@ -1,8 +1,6 @@
 permalink: /:year:month:day/:title
 url:
-baseurl: "/helloworld/"
-repo: helloworld
-favicon: assets/img/favicon.png
+baseurl:
 
 # variables
 name: Your Site Name
