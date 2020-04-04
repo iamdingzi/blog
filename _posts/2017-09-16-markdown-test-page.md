@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Markdown Test Page"
-tags: java
+tags: mybatis
 ---
 
 ## Source: [Markdown Test Page](https://github.com/fullpipe/markdown-test-page)
